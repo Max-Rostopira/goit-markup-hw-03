@@ -159,6 +159,7 @@ nav a.link-site-active {
 }
 
 .advantage-text{
+    margin-bottom: 94px;
     font-size: 14px;
     line-height: 1.7;
     color: var(--primary-text-colour);
@@ -166,7 +167,11 @@ nav a.link-site-active {
 
 /*Чим ми займаємося*/
 .work-title{
-
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    text-align: center;
     color: var(--secondary-text-colour);
 }
 
