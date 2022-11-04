@@ -11,24 +11,24 @@ body {
     font-family: 'Roboto', sans-serif;
     color:var(--primary-text-colour);
     font-style: normal
+}
 
+h1,h2,h3,h4,h5,p,ul{
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 
 ul{
 list-style: none;
-margin: 0;
-padding: 0;
-}
-
-.header-section{
-    background-color: brown;
-    width: 1230px;
 }
 
 a{
     text-decoration: none;
 }
+
+/* page-header*/
+
 
 .logo-text{
     color:var(--button-background-colour) ;
@@ -51,13 +51,25 @@ a{
 }
 
 .link-site{
+    font-weight: 500;
     letter-spacing: 0.02em;
     color: var(--secondary-text-colour);
-    cursor: pointer;
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.2;
+    line-height: 1.1;
     letter-spacing: 0.02em;
+}
+
+
+
+nav a.link-site-active {
+    font-weight: bold;
+    color: var(--button-background-colour);
+}
+
+.nav-list{
+    margin: 0;
+    padding: 0;
 }
 
 .link-site:hover,
@@ -67,61 +79,86 @@ a{
 
 .link-contact{
     font-size: 14px;
-    line-height: 1.2;
+    line-height: 1.1;
     font-weight: 500;
     color: var(--primary-text-colour);
 }
+
 .link-contact:hover,
 .link-contact:focus{
     
     color: var(--button-background-colour);
 }
 
+.container{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+     outline: 2px solid brown;
+}
+
 /*Головний блок*/
 
 .main-section{
+    height: 600px;
     background-color: #2F303A;
+    text-align: center;
 }
 
 .main-title{
+    margin-top: 0;
+    margin-bottom: 0;
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.5;
+    line-height: 1.4;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--secondary-button-colour);
-    margin-top: 0px;;
+    margin-bottom: 30px;
 }
 
 
 .button-main{
+    padding: 10px 32px;
+    min-width: 216px;
+    height: 50px;
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.8;
+    line-height: 1.9;
     display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     background-color: var(--button-background-colour);
     cursor: pointer;
-    border-radius: 5px ;
+    border-radius: 4px ;
     color:var(--secondary-button-colour);
-    padding: 10px 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
 }
 
 /*Переваги*/
 
+.adventege-section{
+    padding-top: 94px;
+}
+
+.adventege-text{
+    margin-bottom: 118px;
+
+}
+
 .advantage{
+    margin-bottom: 10px;
     color: var(--secondary-text-colour);
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.2;
+    line-height: 1.1;
     text-transform: uppercase;
     
 }
 
 .advantage-text{
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     color: var(--primary-text-colour);
@@ -133,7 +170,6 @@ a{
     color: var(--secondary-text-colour);
 }
 
-
 /*Наша команда*/
 .team-title{
     
@@ -142,13 +178,12 @@ a{
 .name{
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.1;
+    line-height: 1.2;
     color: var(--secondary-text-colour);
 }
 .name-work{
-    font-weight: 400;
     font-size: 16px;
-    line-height: 1.1;
+    line-height: 1.2;
     color: var(--primary-text-colour);
 }
 
@@ -159,7 +194,7 @@ a{
     color: var(--secondary-button-colour);
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.2px;
+    line-height: 1.2;
     letter-spacing: 0.03em;
 }
 
@@ -168,10 +203,10 @@ footer{
 }
 
 .adress-title{
-    font-weight: 400;
+    font-style: normal;
+    font-family: Roboto;
     font-size: 14px;
     line-height:1.7;
-    cursor: pointer;
     color: var(--secondary-button-colour);
 
 }
@@ -187,9 +222,9 @@ footer{
 }
 
 .foter-link-contact{
-    font-weight: 400;
+    font-style: normal;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
@@ -201,43 +236,88 @@ footer{
 
 
 /* Портфоліо*/
-.button-portfolio{
+
+/* buttons*/
+
+.button-portfolio-all,
+.button-portfolio-web,
+.button-portfolio-object,
+.button-portfolio-design,
+.button-portfolio-marketing{
     font-family: inherit;
-    background-color: var(--button-colour);
+    background-color:#F5F4FA;;
     cursor:pointer;
-    border-radius: 5px;
-}
-
-
-.button-portfolio{
-    background-color: #F5F4FA;
-    font-family: inherit;
+    border-radius: 4px;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.8;
+    line-height: 1.6;
     text-align: center;
     letter-spacing: 0.03em;
+    border: none;
 }
 
-.button-portfolio:hover{
+.button-portfolio-all:hover,
+.button-portfolio-web:hover,
+.button-portfolio-object:hover,
+.bcutton-portfolio-design:hover,
+.button-portfolio-marketing:hover{
     background-color: var(--button-background-colour);
     color: var(--secondary-button-colour);  
 }
 
 
+.button-portfolio-all:focus,
+.button-portfolio-web:focus,
+.button-portfolio-object:focus,
+.button-portfolio-design:focus,
+.button-portfolio-marketing:focus{
+    background-color: var(--button-background-colour);
+    color: var(--secondary-button-colour);
+}
+
+.button-portfolio-all{
+    width: 73px;
+    height: 38px;
+}
+
+.button-portfolio-web{
+    width: 125px;
+    height: 38px;
+}
+
+.button-portfolio-object{
+    width: 112px;
+    height: 38px;
+}
+
+.button-portfolio-design{
+    width: 103px;
+    height: 38px;
+}
+
+.button-portfolio-marketing{
+    width: 130px;
+    height: 38px;
+}
+
+
+/* List portfolio*/
 
 .projekt-portfolio{
     font-weight: 700;
     font-size: 18px;
-    line-height: 36px;
+    line-height: 2;
     letter-spacing: 0.06em;
     color: var(--secondary-text-colour);
 }
 
 .projekt-type{
-    font-weight: 400;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.9;
     letter-spacing: 0.03em;
     color: var(--primary-text-colour);
 }
+
+
+
+
