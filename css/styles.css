@@ -29,6 +29,15 @@ a{
 
 /* page-header*/
 
+.site-nav,
+.nav-list{
+    display: flex;
+}
+
+.site-nav li{
+    outline: 1px solid red;
+    margin-right: 50px;
+}
 
 .logo-text{
     color:var(--button-background-colour) ;
@@ -91,11 +100,13 @@ nav a.link-site-active {
 }
 
 .container{
+    padding: 0 15px;
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
-     outline: 2px solid brown;
+    outline: 2px solid brown;
 }
+
 
 /*Головний блок*/
 
@@ -108,6 +119,8 @@ nav a.link-site-active {
 .main-title{
     margin-top: 0;
     margin-bottom: 0;
+    padding-top: 200px;
+    padding-bottom: 280px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
@@ -119,6 +132,8 @@ nav a.link-site-active {
 
 
 .button-main{
+    margin: 0 auto;
+    margin-bottom: 300px;
     padding: 10px 32px;
     min-width: 216px;
     height: 50px;
@@ -175,9 +190,22 @@ nav a.link-site-active {
     color: var(--secondary-text-colour);
 }
 
+.imeges-work{
+    padding-bottom: 94px;
+}
+
 /*Наша команда*/
+.work-section{
+    background-color: #F5F4FA;
+}
+
 .team-title{
-    
+    padding-top: 94px;
+    padding-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    text-align: center;
     color: var(--secondary-text-colour);
 }
 .name{
@@ -305,6 +333,9 @@ footer{
     height: 38px;
 }
 
+.portfolio-nav{
+    display: flex;
+}
 
 /* List portfolio*/
 
