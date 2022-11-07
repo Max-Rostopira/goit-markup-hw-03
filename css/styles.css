@@ -13,11 +13,6 @@ body {
     font-style: normal
 }
 
-h1,h2,h3,h4,h5,p,ul{
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
 
 ul{
 list-style: none;
@@ -27,15 +22,56 @@ a{
     text-decoration: none;
 }
 
-/* page-header*/
+.head-list,
+.advantage-list,
+.work-list,
+.team-list,
+.tell-list,
+.footer-adress-list,
+.portfolio-nav,
+.portfolio-example{
+    padding: 0;
+    margin: 0;
+}
 
-.site-nav,
-.nav-list{
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/*Хедер*/
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    outline: 2px solid red;
+    width: 1200px;
+}
+
+.main-nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+.head-list,
+.tell-list{
     display: flex;
 }
 
-.site-nav li{
-    outline: 1px solid red;
+.link-site,
+.link-site-active,
+.link-contact{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.nav-items:not(:last-child){
     margin-right: 50px;
 }
 
@@ -44,6 +80,9 @@ a{
 }
 
 .logo{
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
     color: var(--secondary-text-colour);
     font-family: Raleway, sans-serif;
     font-style: normal;
@@ -76,11 +115,6 @@ nav a.link-site-active {
     color: var(--button-background-colour);
 }
 
-.nav-list{
-    margin: 0;
-    padding: 0;
-}
-
 .link-site:hover,
 .link-site:focus{
     color: var(--button-background-colour);
@@ -99,71 +133,50 @@ nav a.link-site-active {
     color: var(--button-background-colour);
 }
 
-.container{
-    padding: 0 15px;
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    outline: 2px solid brown;
-}
-
-
 /*Головний блок*/
 
 .main-section{
-    height: 600px;
     background-color: #2F303A;
     text-align: center;
 }
 
+
 .main-title{
     margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 200px;
-    padding-bottom: 280px;
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
     letter-spacing: 0.06em;
+    text-align: center;
     text-transform: uppercase;
     color: var(--secondary-button-colour);
-    margin-bottom: 30px;
 }
 
+.button-portfolio{
+    font-family: inherit;
+    background-color: var(--button-colour);
+    cursor:pointer;
+    border-radius: 5px;
+}
 
 .button-main{
-    margin: 0 auto;
-    margin-bottom: 300px;
-    padding: 10px 32px;
-    min-width: 216px;
-    height: 50px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
-    display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     background-color: var(--button-background-colour);
     cursor: pointer;
-    border-radius: 4px ;
+    border-radius: 5px ;
     color:var(--secondary-button-colour);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border: none;
 }
 
 /*Переваги*/
 
-.adventege-section{
-    padding-top: 94px;
-}
-
-.adventege-text{
-    margin-bottom: 118px;
-
-}
-
 .advantage{
+    margin-top: 94px;
     margin-bottom: 10px;
     color: var(--secondary-text-colour);
     font-weight: 700;
@@ -174,61 +187,105 @@ nav a.link-site-active {
 }
 
 .advantage-text{
-    margin-bottom: 94px;
+    width: 270px;
     font-size: 14px;
     line-height: 1.7;
     color: var(--primary-text-colour);
 }
 
+.advantage-items{
+    width: 270px;
+}
+
+.advantage-list{
+    display: flex;
+    justify-content:space-between ;
+}
+
+
+
 /*Чим ми займаємося*/
+
+
 .work-title{
+    text-align: center;
+    margin-top: 94px;
     margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.1;
-    text-align: center;
     color: var(--secondary-text-colour);
 }
 
-.imeges-work{
-    padding-bottom: 94px;
+.work-list{
+    display: flex;
+    justify-content: space-between;
 }
 
+
 /*Наша команда*/
-.work-section{
+
+
+
+.work-container{
+    background-color:#FFFFFF;
+    margin-bottom: 94px;
+}
+
+.team-section{
     background-color: #F5F4FA;
+    text-align: center;
 }
 
 .team-title{
-    padding-top: 94px;
-    padding-bottom: 50px;
+    margin-top: 94px;
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.1;
-    text-align: center;
     color: var(--secondary-text-colour);
 }
 .name{
+    margin-top: 30px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
     color: var(--secondary-text-colour);
 }
 .name-work{
+    padding-bottom: 30px;   
+    margin-top: 10px;
     font-size: 16px;
     line-height: 1.2;
     color: var(--primary-text-colour);
 }
 
+.team-list{
+    display: flex;
+    justify-content: space-between;
+}
+
 /*Футер*/
 
 .logo-footer{
+    margin-bottom: 9px;
+    display: block;
+    padding-top: 56px;
+    padding-bottom: 20px;
     font-family: Raleway, sans-serif;
     color: var(--secondary-button-colour);
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
+}
+
+.adress-footer{
+    margin-bottom: 9px;
+}
+
+.footer-adress-list{
+    padding-bottom: 60px;
 }
 
 footer{
@@ -269,75 +326,43 @@ footer{
 
 
 /* Портфоліо*/
+.portfolio-example{
+    display: block;
+    flex-direction: wrap
+    ;
+}
 
-/* buttons*/
+.portfolio-nav{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
 
-.button-portfolio-all,
-.button-portfolio-web,
-.button-portfolio-object,
-.button-portfolio-design,
-.button-portfolio-marketing{
+.portfolio-list:not(:last-child){
+    margin-right: 8px;
+}
+
+.button-portfolio{
+    background-color: #F5F4FA;
     font-family: inherit;
-    background-color:#F5F4FA;;
-    cursor:pointer;
-    border-radius: 4px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
     text-align: center;
     letter-spacing: 0.03em;
-    border: none;
 }
 
-.button-portfolio-all:hover,
-.button-portfolio-web:hover,
-.button-portfolio-object:hover,
-.bcutton-portfolio-design:hover,
-.button-portfolio-marketing:hover{
+.button-portfolio:hover{
     background-color: var(--button-background-colour);
     color: var(--secondary-button-colour);  
 }
 
-
-.button-portfolio-all:focus,
-.button-portfolio-web:focus,
-.button-portfolio-object:focus,
-.button-portfolio-design:focus,
-.button-portfolio-marketing:focus{
+.button-portfolio:focus{
     background-color: var(--button-background-colour);
     color: var(--secondary-button-colour);
 }
 
-.button-portfolio-all{
-    width: 73px;
-    height: 38px;
-}
 
-.button-portfolio-web{
-    width: 125px;
-    height: 38px;
-}
-
-.button-portfolio-object{
-    width: 112px;
-    height: 38px;
-}
-
-.button-portfolio-design{
-    width: 103px;
-    height: 38px;
-}
-
-.button-portfolio-marketing{
-    width: 130px;
-    height: 38px;
-}
-
-.portfolio-nav{
-    display: flex;
-}
-
-/* List portfolio*/
 
 .projekt-portfolio{
     font-weight: 700;
