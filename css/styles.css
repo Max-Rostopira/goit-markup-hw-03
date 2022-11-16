@@ -45,6 +45,15 @@ ul{
     margin-bottom: 0;
 }
 
+button{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+img{
+    display: block;
+}
+
 /*Хедер*/
 
 hr{
@@ -56,25 +65,21 @@ hr{
     margin-left: auto;
     margin-right: auto;
     outline: 2px solid transparent;
-    width: 1200px;
-}
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
 
-.conteiner line{
-    outline: 2px solid red;
 }
 
 .main-nav{
     display: flex;
-    justify-content: space-between;
+    
 }
 
 .head-list,
 .tell-list{
     display: flex;
-}
-
-.head-list{
-    padding-right: 344px;
+    margin-left: auto;
 }
 
 .link-site,
@@ -94,7 +99,6 @@ hr{
 }
 
 .logo{
-    display: flex;
     padding-top: 24px;
     padding-bottom: 24px;
     color: var(--secondary-text-colour);
@@ -148,18 +152,25 @@ nav a.link-site-active {
 }
 
 /*Головний блок*/
+.main-container{
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
 
 .main-section{
     background-color: #2F303A;
     text-align: center;
+    justify-content: center;
+    width: 1600px;
 }
 
 
 .main-title{
+    max-width: 700px;
     font-family: 'Roboto';
-    margin-top: 0px;
-    margin-bottom: 30px;
-    padding-top: 280px;
+    
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
@@ -200,8 +211,7 @@ nav a.link-site-active {
 /*Переваги*/
 
 .advantage{
-    margin-top: 94px;
-    margin-bottom: 10px;
+    
     color: var(--secondary-text-colour);
     font-weight: 700;
     font-size: 14px;
@@ -233,8 +243,7 @@ nav a.link-site-active {
 
 .work-title{
     text-align: center;
-    margin-top: 94px;
-    margin-bottom: 50px;
+    
     font-weight: 700;
     font-size: 36px;
     line-height: 1.1;
@@ -260,26 +269,24 @@ nav a.link-site-active {
 .team-section{
     background-color: #F5F4FA;
     text-align: center;
+    
 }
 
 .team-title{
-    margin-top: 94px;
-    margin-bottom: 50px;
+   
     font-weight: 700;
     font-size: 36px;
     line-height: 1.1;
     color: var(--secondary-text-colour);
 }
 .name{
-    margin-top: 30px;
-    font-weight: 500;
+   
     font-size: 16px;
     line-height: 1.2;
     color: var(--secondary-text-colour);
 }
 .name-work{
-    padding-bottom: 30px;   
-    margin-top: 10px;
+    
     font-size: 16px;
     line-height: 1.2;
     color: var(--primary-text-colour);
@@ -307,10 +314,6 @@ nav a.link-site-active {
 
 .adress-footer{
     margin-bottom: 9px;
-}
-
-.footer-adress-list{
-    padding-bottom: 60px;
 }
 
 footer{
@@ -352,14 +355,12 @@ footer{
 
 /* Портфоліо*/
 .portfolio-main{
-    background-color: #F5F5F5;
+    background-color: #FFFFFF;
 }
 
 .portfolio-nav{
     display: flex;
     justify-content: center;
-    padding-top: 100px;
-    padding-bottom: 56px;
 }
 
 
@@ -368,11 +369,10 @@ footer{
 }
 
 .button-portfolio{
-    margin-left: 22px;
-    margin-right: 22px;
-    margin-top: 6px;
-    margin-bottom: 6px;
-    
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     border: none;
     background-color: #F5F4FA;
     font-family: inherit;
@@ -396,9 +396,7 @@ footer{
 
 
 .projekt-portfolio{
-    margin-top: 20px;
-    font-weight: 700;
-    margin-left: 24px;
+   
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
@@ -406,9 +404,7 @@ footer{
 }
 
 .projekt-type{
-    margin-left: 24px;
-    margin-top: 4px;
-    margin-bottom: 20px;
+   
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.03em;
@@ -420,16 +416,14 @@ footer{
 
 
 .portfolio-example{
-    padding-bottom: 94px;
-    padding-left: 15px;
+   
     display: flex;
     flex-wrap: wrap;
 }
 
 
 .portfolio-card{
-    margin-bottom: 30px;
-    margin-right: 30px;
+   
     background-color: #FFFFFF;
 }
 
