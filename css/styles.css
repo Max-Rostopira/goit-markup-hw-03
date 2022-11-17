@@ -54,6 +54,11 @@ img{
     display: block;
 }
 
+hr{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 /*Хедер*/
 
 
@@ -116,11 +121,7 @@ img{
     letter-spacing: 0.03em;
 
 }
-.logo:hover,
-.logo:focus{
-    cursor: pointer;
-    color: var(--button-background-colour);
-}
+
 
 .link-site{
     font-weight: 500;
@@ -162,49 +163,56 @@ nav a.link-site-active {
     width: 1600px;
     margin-left: auto;
     margin-right: auto;
-    
+    text-align: center;
+
 }
 
 .main-section{
     background-color: #2F303A;
-    justify-content: center;
-    width: 1600px;
+    align-items: center;
+    max-width: 1600px;
+    
+
 }
 
 
 .main-title{
     
-    max-width: 700px;
-    font-family: 'Roboto';
+    padding-top: 200px;
     
+    margin-bottom: 30px;
+
+
+    max-width: 700px;
+   
+
+    margin-left: auto;
+    margin-right: auto;
+
+    font-family: 'Roboto';
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
     letter-spacing: 0.06em;
-    
     text-transform: uppercase;
     color: var(--secondary-button-colour);
 }
 
-.button-portfolio{
-    font-family: inherit;
-    background-color: var(--button-colour);
-    cursor:pointer;
-    border-radius: 5px;
-}
+
 
 .button-main{
+    
     padding-left: 32px;
     padding-right: 32px;
     padding-top: 10px;
     padding-bottom: 10px;
 
+    margin-bottom: 200px;
+
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
-    align-items: center;
-    text-align: center;
     border: none;
     letter-spacing: 0.06em;
     background-color: var(--button-background-colour);
@@ -213,9 +221,25 @@ nav a.link-site-active {
     color:var(--secondary-button-colour);
 }
 
+
+.button-main:hover,
+.button-main:focus{
+    background: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
 /*Переваги*/
 
+.advantage-section{
+    background-color: #FFFFFF;
+    padding-top: 94px;
+    padding-bottom: 47px;
+}
+
 .advantage{
+
+    margin-bottom: 10px;
     
     color: var(--secondary-text-colour);
     font-weight: 700;
@@ -246,7 +270,16 @@ nav a.link-site-active {
 /*Чим ми займаємося*/
 
 
+.work-section{
+    padding-top: 47px;
+    padding-bottom: 94px;
+    background-color: #FFFFFF;
+}
+
+
 .work-title{
+    margin-bottom: 50px;
+
     text-align: center;
     
     font-weight: 700;
@@ -256,8 +289,15 @@ nav a.link-site-active {
 }
 
 .work-list{
+    
+
     display: flex;
-    justify-content: space-between;
+    gap: 30px;
+
+}
+
+.work-section{
+    background-color: #FFFFFF;
 }
 
 
@@ -266,31 +306,42 @@ nav a.link-site-active {
 
 
 .work-container{
+
+    border-radius: 0px 0px 4px 4px;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     background-color:#FFFFFF;
+    padding-bottom: 30px;
     
 }
 
 .team-section{
-    background-color: #F5F4FA;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: burlywood;
     text-align: center;
+    background-color: #F5F4FA;
     
 }
 
 .team-title{
-   
+    margin-bottom: 50px;
+    
     font-weight: 700;
     font-size: 36px;
     line-height: 1.1;
     color: var(--secondary-text-colour);
 }
 .name{
-   
+    margin-top: 30px;
+
     font-size: 16px;
     line-height: 1.2;
     color: var(--secondary-text-colour);
 }
 .name-work{
-    
+    margin-top: 10px;
+
     font-size: 16px;
     line-height: 1.2;
     color: var(--primary-text-colour);
@@ -298,13 +349,21 @@ nav a.link-site-active {
 
 .team-list{
     display: flex;
-    justify-content: space-between;
+    gap: 30px;
 }
 
 /*Футер*/
 
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: #2F303A;
+}
+
 .logo-footer{
-    margin-bottom: 9px;
+    margin-bottom: 20px;
+    
     display: block;
     font-family: Raleway, sans-serif;
     color: var(--secondary-button-colour);
@@ -314,15 +373,9 @@ nav a.link-site-active {
     letter-spacing: 0.03em;
 }
 
-.adress-footer{
-    margin-bottom: 9px;
-}
-
-footer{
-    background-color: #2F303A;
-}
 
 .adress-title{
+    
     font-style: normal;
     font-family: Roboto;
     font-size: 14px;
@@ -335,11 +388,6 @@ footer{
     color: var(--button-background-colour);
 }
 
-.logo-footer:hover,
-.logo-footer:focus{
-    cursor: pointer;
-    color: var(--button-background-colour);
-}
 
 .foter-link-contact{
     font-style: normal;
@@ -356,11 +404,17 @@ footer{
 
 
 /* Портфоліо*/
-.portfolio-main{
+
+.portfolio-section{
+    padding-top: 100px;
+    padding-bottom: 94px;
     background-color: #FFFFFF;
 }
 
+
 .portfolio-nav{
+margin-bottom: 50px;
+
     display: flex;
     justify-content: center;
 }
@@ -369,6 +423,7 @@ footer{
 .portfolio-list:not(:last-child){
     margin-right: 8px;
 }
+
 
 .button-portfolio{
     padding-left: 22px;
@@ -379,9 +434,11 @@ footer{
     background-color: #F5F4FA;
     font-family: inherit;
     font-weight: 500;
+    border-radius: 5px;
     font-size: 16px;
     line-height: 1.6;
     text-align: center;
+    cursor: pointer;
     letter-spacing: 0.03em;
 }
 
@@ -398,6 +455,9 @@ footer{
 
 
 .projekt-portfolio{
+
+    margin-top: 20px;
+    margin-left: 24px;
    
     font-size: 18px;
     line-height: 2;
@@ -406,6 +466,11 @@ footer{
 }
 
 .projekt-type{
+
+    margin-top: 4px;
+    margin-left: 24px;
+
+    padding-bottom: 20px;
    
     font-size: 16px;
     line-height: 1.9;
@@ -418,17 +483,23 @@ footer{
 
 
 .portfolio-example{
-   
+    
+    gap: 30px;
     display: flex;
     flex-wrap: wrap;
 }
 
 
 .portfolio-card{
-   
-    background-color: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    background-color:#FFFFFF;
 }
 
-.portfolio-card:nth-child(3n){
+.portfolio-card:hover,
+.portfolio-card:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio-card:nth-child(3n) {
     margin-right: 0;
 }
