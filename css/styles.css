@@ -26,7 +26,7 @@ a{
 .work-list,
 .team-list,
 .tell-list,
-.footer-adress-list,
+.footer-list,
 .portfolio-nav,
 .portfolio-example{
     padding: 0;
@@ -53,11 +53,7 @@ img{
     display: block;
 }
 
-
-
 /*Хедер*/
-
-
 
 .container{
     margin-left: auto;
@@ -123,7 +119,7 @@ img{
     font-weight: 500;
     letter-spacing: 0.02em;
     color: var(--secondary-text-colour);
-    font-weight: 500;
+    
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
@@ -132,7 +128,7 @@ img{
 
 
 nav a.link-site-active {
-    font-weight: bold;
+    
     color: var(--button-background-colour);
 }
 
@@ -201,9 +197,8 @@ nav a.link-site-active {
     padding-top: 10px;
     padding-bottom: 10px;
 
-    font-family: 'Roboto';
     font-weight: 700;
-    font-size: 16px;
+    
     line-height: 1.9;
     border: none;
     letter-spacing: 0.06em;
@@ -255,7 +250,7 @@ nav a.link-site-active {
 
 .advantage-list{
     display: flex;
-    justify-content:space-between ;
+    gap: 30px ;
 }
 
 
@@ -374,6 +369,7 @@ nav a.link-site-active {
 }
 
 
+
 .address-title{
     
     font-style: normal;
@@ -388,9 +384,12 @@ nav a.link-site-active {
     color: var(--button-background-colour);
 }
 
+.adress-title:visited{
+    color: #FFFFFF;
+}
+
 
 .foter-link-contact{
-    font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
@@ -399,6 +398,14 @@ nav a.link-site-active {
 .foter-link-contact:hover,
 .foter-link-contact:focus{
     color: #2196F3;
+}
+
+.footer-address {
+    margin-bottom: 9px;
+}
+
+.footer-mail {
+    margin-bottom: 9px;
 }
 
 
@@ -419,7 +426,7 @@ nav a.link-site-active {
 }
 
 .portfolio-section{
-    padding-top: 100px;
+    padding-top: 94px;
     padding-bottom: 94px;
     background-color: #FFFFFF;
 }
@@ -472,8 +479,6 @@ nav a.link-site-active {
 }
 
 .projekt-type{
-   
-    font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.03em;
     color: var(--primary-text-colour);
@@ -483,6 +488,7 @@ nav a.link-site-active {
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 24px;
+    padding-right: 24px;
 
     border-bottom: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
@@ -497,6 +503,7 @@ nav a.link-site-active {
 }
 
 .portfolio-card{
+    width: 370px;
     background-color:#FFFFFF;
 }
 
