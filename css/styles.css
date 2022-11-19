@@ -221,7 +221,7 @@ nav a.link-site-active {
 .advantage-section{
     background-color: #FFFFFF;
     padding-top: 94px;
-    padding-bottom: 47px;
+    padding-bottom: 94px;
 }
 
 .advantage{
@@ -259,10 +259,10 @@ nav a.link-site-active {
 
 
 .work-section{
-    padding-top: 47px;
+    padding-top: 0;
     padding-bottom: 94px;
 
-    background-color: #FFFFFF;
+    
 }
 
 
@@ -282,9 +282,6 @@ nav a.link-site-active {
 
 }
 
-.work-section{
-    background-color: #FFFFFF;
-}
 
 /*Наша команда*/
 
@@ -365,15 +362,12 @@ nav a.link-site-active {
 
 .address-footer{
     font-style: normal;
-    font-family: 'Roboto';
+   
 }
 
 
 
-.address-title{
-    
-    font-style: normal;
-    font-family: 'Roboto';
+.address-title{   
     font-size: 14px;
     line-height:1.7;
     color: var(--secondary-button-colour);
@@ -408,7 +402,6 @@ nav a.link-site-active {
     margin-bottom: 9px;
 }
 
-
 /* Портфоліо*/
 
 .visually-hidden {
@@ -428,7 +421,7 @@ nav a.link-site-active {
 .portfolio-section{
     padding-top: 94px;
     padding-bottom: 94px;
-    background-color: #FFFFFF;
+   
 }
 
 .portfolio-nav{
@@ -504,7 +497,6 @@ nav a.link-site-active {
 
 .portfolio-card{
     width: 370px;
-    background-color:#FFFFFF;
 }
 
 .portfolio-card:hover,
