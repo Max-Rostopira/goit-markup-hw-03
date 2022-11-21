@@ -128,8 +128,11 @@ img{
 
 
 nav a.link-site-active {
-    
     color: var(--button-background-colour);
+
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
 }
 
 .link-site:hover,
